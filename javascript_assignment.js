@@ -41,7 +41,7 @@ function game() {
       continue;
     }
 
-    const result = playRound(selectedOption, computerSelection)
+    const result = playRound(selectedOption, computerSelection);
  
     if (result) {
       console.log(`You win, ${selectedOption} beats ${computerSelection}`);
@@ -61,4 +61,4 @@ function game() {
   }
 }
 
-game()
+game();
