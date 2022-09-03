@@ -21,7 +21,7 @@ function isUserOptionValid(selectedOption) {
     return false;
   }
 
-  return true
+  return true;
 }
 
 function game() {
