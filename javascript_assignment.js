@@ -30,11 +30,12 @@ function game() {
 
   for (let i = 0; i < 5; i ++) {
     let selectedOption = prompt().toLowerCase();
-    const computerSelection = computerPlay();
-
+    
     while (!isUserOptionValid(selectedOption)) {
       selectedOption = prompt().toLowerCase();
     }
+    
+    const computerSelection = computerPlay();
 
     if (selectedOption == computerSelection) {
       console.log(`Draw, both players used ${selectedOption}`);
